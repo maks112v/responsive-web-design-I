@@ -121,7 +121,7 @@ nav a:hover {
 
 @media(min-width: 801px){
 	body {
-		margin-top: 50px;
+		margin-top: 75px;
 	}
 	.navigation {
 		top: 0;
@@ -177,8 +177,16 @@ nav a:hover {
 /* Header Image Layout */
 .services-header .header-image {
 	padding: 30px 0px;
-	display: flex;
-	justify-content: center;
+}
+
+@media(max-width: 800px){
+	.services-header {
+		width: 95%;
+		margin: 25px auto;
+	}
+	.services-header .header-image {
+		display: none;
+	}
 }
 
 /* Main Padding*/
@@ -220,6 +228,12 @@ main {
 	height: 36px;
 	vertical-align: middle;
 	text-align: center;
+}
+
+@media (max-width: 500px){
+	.card {
+		width: 100%;
+	}
 }
 
 /* About Section */
